@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Change</title>
+
+    <link rel="icon shortcut" href="css/img/logo (1).png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- == Icons == -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+<body class="body-effect" data-theme="light_theme">
+<nav>
+    <div class="container nav-container">
+        <a href="#" class="logo"><b>Cretiv</b>Event</a>
+        <div class="nav-btns">
+            <button id="theme-toggle" class="theme">
+                <i class="fa-solid fa-moon active"></i>
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <button class="buy-ticket" onclick="document.getElementById('contactOverlay').style.display = 'block';">Buy Ticket</button>
+        </div>
+    </div>
+</nav>
+<section class="reveal-fixed banner">
+    <div class="banner-container container">
+        <div class="bn-text">
+            <div class="event-text">
+                <h1>CretivEvent summit 2024</h1>
+                <div id="countdown">
+                    <div class="count-card">
+                        <div class="count" id="days">00</div>
+                        <div class="title">Days</div>
+                    </div>
+                    <div class="count-colon">:</div>
+                    <div class="count-card">
+                        <div class="count" id="hours">00</div>
+                        <div class="title">Hours</div>
+                    </div>
+                    <div class="count-colon">:</div>
+                    <div class="count-card">
+                        <div class="count" id="minutes">00</div>
+                        <div class="title">Mins</div>
+                    </div>
+                    <div class="count-colon">:</div>
+                    <div class="count-card">
+                        <div class="count" id="seconds">00</div>
+                        <div class="title">Secs</div>
+                    </div>
+                </div>
+            </div>
+            <svg class="left" xmlns="http://www.w3.org/2000/svg" width="49" height="25" viewBox="0 0 49 25" fill="none">
+                <path d="M3.8147e-06 0H49L24.5 25L3.8147e-06 0Z" fill="#EA3351"/>
+            </svg>
+            <svg class="top" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                <path d="M0 0V35H35V0H0ZM30.1272 30.1272H4.88183V4.87285H30.1361L30.1272 30.1272Z" fill="#FF9D00"/>
+            </svg>
+            <svg class="circle" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                <path d="M15.5 0C12.4344 0 9.43771 0.909059 6.88875 2.61222C4.33979 4.31538 2.35306 6.73615 1.1799 9.56841C0.0067412 12.4007 -0.300244 15.5172 0.297826 18.5239C0.895897 21.5306 2.37216 24.2924 4.53987 26.4601C6.70758 28.6279 9.46944 30.1041 12.4761 30.7022C15.4828 31.3002 18.5994 30.9933 21.4316 29.8201C24.2639 28.647 26.6846 26.6603 28.3878 24.1113C30.0909 21.5624 31 18.5656 31 15.5C31 13.4645 30.5991 11.449 29.8202 9.56841C29.0412 7.68786 27.8995 5.97915 26.4602 4.53984C25.0209 3.10054 23.3122 1.95881 21.4316 1.17987C19.5511 0.400919 17.5355 0 15.5 0ZM15.5 22.8776C14.0366 22.8776 12.6061 22.4434 11.3896 21.63C10.1731 20.8166 9.2252 19.6606 8.66599 18.3082C8.10678 16.9559 7.96138 15.468 8.24817 14.033C8.53496 12.5979 9.24105 11.2803 10.2771 10.2467C11.3131 9.21317 12.6325 8.51024 14.0682 8.2269C15.5039 7.94355 16.9914 8.09254 18.3424 8.65499C19.6934 9.21745 20.8472 10.1681 21.6576 11.3866C22.4681 12.605 22.8988 14.0366 22.8953 15.5C22.8766 17.449 22.0892 19.3119 20.7043 20.6835C19.3195 22.0551 17.4492 22.8245 15.5 22.8244V22.8776Z" fill="#FFC200"/>
+              </svg>
+        </div>
+        <div class="bn-image">
+            <img src="css/img/event banner image.png" alt="">
+        </div>
+    </div>
+</section>
+      <section class="about-event reveal">
+        <div class="about-event-container reveal container">
+          <div class="about-event-image">
+            <img src="css/img/Video content.png" alt="Intelliverseai">
+          </div>
+          <div class="about-event-text reveal">
+            <h1>About Event!</h1>
+            <p>Join us at the Africa AI Summit, where we bring together key stakeholders from various industries and
+              countries to explore cutting-edge AI solutions in the banking sector. This event provides a unique
+              opportunity for organizations to connect with our vibrant AI community, showcase their AI initiatives, and
+              gain valuable insights into the world of artificial intelligence.</p>
+             <p>42 Drive, Florida, USA</p>
+            <div class="about-event-cards">
+              <div class="about-event-card">
+                <h3>2</h3>
+                <p>Days Event</p>
+              </div>
+              <div class="about-event-card">
+                <h3>15+</h3>
+                <p>Speakers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reveal speakers">
+        <div class="speakers-container container reveal">
+          <div class="speakers-head">
+            <h1 class="text-center">Speakers</h1>
+          </div>
+          <div class="speakers-content reveal">
+            <div class="speaker ">
+              <img src="css/img/profile image one.png" alt="Intelliverseai">
+              <div class="speaker-info">
+                <h2>Jerry Wallace</h2>
+                <p>Javascript Engineer</p>
+              </div>
+            </div>
+            <div class="speaker">
+              <img src="css/img/profile image one.png" alt="Intelliverseai">
+              <div class="speaker-info">
+                <h2>Jerry Wallace</h2>
+                <p>Javascript Engineer</p>
+              </div>
+            </div>
+            <div class="speaker">
+              <img src="css/img/profile image one.png" alt="Intelliverseai">
+              <div class="speaker-info">
+                <h2>Jerry Wallace</h2>
+                <p>Javascript Engineer</p>
+              </div>
+            </div>
+            <div class="speaker">
+              <img src="css/img/profile image one.png" alt="Intelliverseai">
+              <div class="speaker-info">
+                <h2>Jerry Wallace</h2>
+                <p>Javascript Engineer</p>
+              </div>
+            </div>
+            <div class="speaker">
+              <img src="css/img/profile image one.png" alt="Intelliverseai">
+              <div class="speaker-info">
+                <h2>Jerry Wallace</h2>
+                <p>Javascript Engineer</p>
+              </div>
+            </div>
+            <div class="speaker">
+              <img src="css/img/profile image one.png" alt="Intelliverseai">
+              <div class="speaker-info">
+                <h2>Jerry Wallace</h2>
+                <p>Javascript Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reveal events-highlights">
+        <div class="events-highlights-container reveal container">
+          <div class="events-highlights-head reveal">
+            <h1>Key Summit Highlights</h1>
+            <p>Experience the essence of our upcoming event with a glimpse into its impactful sessions, engaging
+              discussions, and unique moments that promise to inspire and captivate. Join us for an unforgettable
+              occasion!</p>
+          </div>
+          <div class="events-highlights-content reveal">
+            <div class="events-highlights-image">
+              <img src="css/Highlights/highlights showcase one.png" alt="Intelliverseai">
+            </div>
+            <div class="events-highlights-text">
+              <div class="events-highlight reveal">
+                <div class="events-highlight-image">
+                  <img src="css/Highlights/Innovation.png" alt="Intelliverseai">
+                </div>
+                <div class="events-highlight-text">
+                  <h1>Innovation at its Peak</h1>
+                  <p>Immerse yourself in a two-day hackathon featuring talented developers creating cutting-edge AI
+                    solutions for the banking industry.
+                  </p>
+                </div>
+              </div>
+              <div class="events-highlight reveal">
+                <div class="events-highlight-image">
+                  <img src="css/Highlights/Ai Biz.png" alt="Intelliverseai">
+                </div>
+                <div class="events-highlight-text">
+                  <h1>AI in Business</h1>
+                  <p>Learn how AI is transforming banking operations, enhancing security, and enabling data-driven
+                    decision-making.
+                  </p>
+                </div>
+              </div>
+              <div class="events-highlight reveal">
+                <div class="events-highlight-image">
+                  <img src="css/Highlights/Networking.png" alt="Intelliverseai">
+                </div>
+                <div class="events-highlight-text">
+                  <h1>Networking</h1>
+                  <p>Connect with industry professionals, thought leaders and innovators driving the AI revolution in
+                    banking. Collaborate and build valuable connections.</p>
+                </div>
+              </div>
+              <div class="events-highlight reveal">
+                <div class="events-highlight-image">
+                  <img src="css/Highlights/Learning and Insights.png" alt="Intelliverseai">
+                </div>
+                <div class="events-highlight-text">
+                  <h1>Learning and Insights</h1>
+                  <p>Gain invaluable insights through keynote sessions, panel discussions, and expert-led workshops,
+                    shedding light on AI's current and future impact on banking.
+                  </p>
+                </div>
+              </div>
+              <div class="events-highlight reveal">
+                <div class="events-highlight-image">
+                  <img src="css/Highlights/Startup.png" alt="Intelliverseai">
+                </div>
+                <div class="events-highlight-text">
+                  <h1>Startup Showcases</h1>
+                  <p>Explore groundbreaking AI solutions from emerging startups that have the potential to reshape banking
+                    services.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="events-highlights-content reveal">
+            <div class="events-highlights-text">
+              <div class="events-highlight reveal">
+                <div class="events-highlight-image">
+                  <img src="css/Highlights/Regulatory Insights.png" alt="Intelliverseai">
+                </div>
+                <div class="events-highlight-text">
+                  <h1>Regulatory Insights</h1>
+                  <p>Understand the regulatory landscape and ethical considerations in AI deployment through dedicated
+                    sessions.
+                  </p>
+                </div>
+              </div>
+              <div class="events-highlight reveal">
+                <div class="events-highlight-image">
+                  <img src="css/Highlights/Partnerships.png" alt="Intelliverseai">
+                </div>
+                <div class="events-highlight-text">
+                  <h1>Partnerships</h1>
+                  <p>Explore collaboration opportunities with industry stakeholders, fostering innovation and growth for
+                    your bank.
+                  </p>
+                </div>
+              </div>
+              <div class="events-highlight reveal">
+                <div class="events-highlight-image">
+                  <img src="css/Highlights/Talent Sourcing.png" alt="Intelliverseai">
+                </div>
+                <div class="events-highlight-text">
+                  <h1>Talent Sourcing</h1>
+                  <p>The summit attracts the finest AI minds and emerging talents eager to explore opportunities and
+                    partnerships with banks. Connect with exceptional talents for your AI projects and innovations.
+                  </p>
+                </div>
+              </div>
+              <div class="events-highlight reveal">
+                <div class="events-highlight-image">
+                  <img src="css/Highlights/Collaboration Potential.png" alt="Intelliverseai">
+                </div>
+                <div class="events-highlight-text">
+                  <h1>Collaboration Potential</h1>
+                  <p>Engage with AI experts, data scientists, and machine learning engineers to foster collaborative
+                    ventures driving innovation within your bank.
+                  </p>
+                </div>
+              </div>
+              <div class="events-highlight reveal">
+                <div class="events-highlight-image">
+                  <img src="css/Highlights/Skills Developmen.png" alt="Intelliverseai">
+                </div>
+                <div class="events-highlight-text">
+                  <h1>Skills Development</h1>
+                  <p>Enhance your team's AI knowledge and skills through practical workshops and sessions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="events-highlights-image">
+              <img src="css/Highlights/Highlight showcase two.png" alt="Intelliverseai">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reveal event-schedule bg-[#ECF9FF]">
+        <div class="event-schedule-container container">
+          <div class="event-schedule-head">
+            <h1>Event Schedule</h1>
+            <p>Diving into our conference schedule, packed with enriching sessions, expert talks, and networking
+              opportunities.</p>
+          </div>
+          <div class="event-schedule-content">
+            <div class="event-date">
+              <h2>Friday, 10 January 2024</h2>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">8:00 AM - 8:30 AM</div>
+              <div class="card-text span-title">Virtual Check-In and Welcome</div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">8:30 AM - 8:45 AM</div>
+              <div class="card-text span-title">Opening Remarks and Event Overview</div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">8:45 AM - 10:45 AM</div>
+              <div class="card-text span-title">Keynote Session 1 (10 speakers, 15 minutes each)</div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">10:45 AM - 11:00 AM</div>
+              <div class="card-text span-title">Networking Break</div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">11:00 AM - 12:00 PM</div>
+              <div class="card-text span-title">Keynote Session 2 (2 speakers, 15 minutes each)</div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">12:00 PM - 1:00 PM</div>
+              <div class="card-text span-title">Networking Lunch</div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">1:00 PM - 2:00 PM</div>
+              <div class="card-text span-title">Keynote Session 3 (2 speakers, 15 minutes each)</div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">2:00 PM - 2:15 PM</div>
+              <div class="card-text span-title">Short Break</div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">2:15 PM - 3:15 PM</div>
+              <div class="card-text span-title">Keynote Session 4 (2 speakers, 15 minutes each)</div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">3:15 PM - 3:30 PM</div>
+              <div class="card-text span-title">Networking Break</div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">3:30 PM - 4:30 PM</div>
+              <div class="card-text span-title">Keynote Session 5 (2 speakers, 15 minutes each)</div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">4:30 PM - 5:30 PM</div>
+              <div class="card-text span-title">Hackathon Winners' Showcase (1 hour)
+              </div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">5:30 PM - 5:45 PM</div>
+              <div class="card-text span-title">Closing Remarks and Thank You</div>
+            </div>
+            <div class="event-schedule-card reveal">
+              <div class="card-text span-time">5:45 PM - 6:30 PM</div>
+              <div class="card-text span-title">Networking and Virtual Reception</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reveal subscription">
+        <div class="contact-overlay reveal" id="contactOverlay">
+                    <div class="contact-overlay-content">
+                        <span class="closebtn" title="Close Overlay" onclick="document.getElementById('contactOverlay').style.display = 'none';"><i class="fas fa-times"></i></span>
+                        <div class="form" id="loading">
+                            <div class="form-head">
+                                <h1>Buy Ticket</h1>
+                            </div>
+                            <form @sumbit.prevent="handleSubmit">
+                                <label for="">Name</label>
+                                <input type="text" placeholder="Enter Your Name" v-model="name">
+                                <label for="">Email</label>
+                                <input type="email" placeholder="Enter Your Email" v-model="email">
+                                <label for="">Company Name</label>
+                                <input type="text" placeholder="intelliverse" v-model="company">
+                                <label for="">Phone Number</label>
+                                <input type="text" placeholder="" v-model="phone">
+                                <label for="">Sponsorship Type</label>
+                                <select v-model="sponsorship">
+                                  <option value="silver">Silver</option>
+                                  <option value="gold">Gold</option>
+                                  <option value="platinum">Platinum</option>
+                                </select>
+                                <button type="submit">Submit Request</button>
+                            </form>
+                        </div>
+                        <div class="sent-message" id="load">
+                            <div class="message-loader" id="spinner">
+                                <div class="loader"></div>
+                            </div>
+                            <div class="sent-alert" id="message">
+                                <div class="icon"><i class="fas fa-check"></i></div>
+                                <p>Message Sent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <div class="subscription-container container">
+            <div class="subscription-head">
+                <p>Corporates</p>
+                <h1>Become an Event Sponsor</h1>
+            </div>
+            <div class="subscription-content">
+                <div class="subscription-card reveal">
+                    <p>Silver</p>
+                    <h1>$1000</h1>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Speaker Key Note</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Virtual Exhibition Booth</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">1 day hackathon</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Netwroking Opportunities</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Social Media Promotion</div>
+                        </div>
+                    </div>
+                    <button class="btn-ticket" onclick="document.getElementById('contactOverlay').style.display = 'block';">GET YOUR TICKET</button>
+                </div>
+                <div class="subscription-card reveal">
+                    <p>Platinum</p>
+                    <h1>$2500</h1>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Speaker Key Note</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Virtual Exhibition Booth</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="text">Dedicated Sponsor Session</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Two Day hackathon</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Networking Opportunities</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Custom Content</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Attendee Data</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Social Media Promotion</div>
+                        </div>
+                    </div>
+                    <button class="btn-ticket" onclick="document.getElementById('contactOverlay').style.display = 'block';">GET YOUR TICKET</button>
+                </div>
+                
+                <div class="subscription-card reveal">
+                    <p>Gold</p>
+                    <h1>$1500</h1>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Prominent Branding</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Virtual Exhibition Booth</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Sponsored Session</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Two Day Hackathon</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Networking Opportinities</div>
+                        </div>
+                        <div class="feature">
+                            <div class="check">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="fi:check">
+                                    <path id="Vector" d="M8.33317 2.5L3.74984 7.08333L1.6665 5" stroke="#E58E04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        <div class="text">Social Media Promotion</div>
+                        </div>
+                    </div>
+                    <button class="btn-ticket" onclick="document.getElementById('contactOverlay').style.display = 'block';">GET YOUR TICKET</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
